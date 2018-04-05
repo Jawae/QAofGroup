@@ -35,20 +35,22 @@ j&	\left[ \begin{matrix}
 \end{matrix} \right]&
 \end{matrix}
 \]
-\begin{verbatim}
+\begin{minted}{tex}
 \[
-\begin{matrix}
-&	i&	\\
-j&	\left[ \begin{matrix}
-0&	\cdots&	0&	\cdots&	0\\
-\vdots&	\ddots&	\vdots&	&	\vdots\\
-0&	\cdots&	m&	\cdots&	0\\
-\vdots&	&	\vdots&	\ddots&	\vdots\\
-0&	\cdots&	0&	\cdots&	0\\
-\end{matrix} \right]&
+  \begin{matrix}
+     & i       &  \\
+   j & \left[
+         \begin{matrix}
+           0      & \cdots & 0      &	\cdots & 0      \\
+           \vdots & \ddots & \vdots &	       & \vdots \\
+           0      & \cdots & m      &	\cdots & 0      \\
+           \vdots &        & \vdots &	\ddots & \vdots \\
+           0      & \cdots & 0      &	\cdots & 0      \\
+         \end{matrix}
+       \right] &
 \end{matrix}
 \]
-\end{verbatim}
+\end{minted}
 
 也可以二阶矩阵套三阶矩阵。
 \[
@@ -63,20 +65,22 @@ j&\left[ \begin{matrix}
 \end{matrix} \right]
 \end{matrix}
 \]
-\begin{verbatim}
+\begin{minted}{tex}
 \[
-\begin{matrix}
-&i\\
-j&\left[ \begin{matrix}
-0&\cdots&0&\cdots&0\\
-\vdots&\ddots&\vdots&&\vdots\\
-0&\cdots&m&\cdots&0\\
-\vdots&&\vdots&\ddots&\vdots\\
-0&\cdots&0&\cdots&0\\
-\end{matrix} \right]
-\end{matrix}
+  \begin{matrix}
+      & i  \\
+    j & \left[
+            \begin{matrix}
+              0      & \cdots & 0      & \cdots & 0      \\
+              \vdots & \ddots & \vdots &        & \vdots \\
+              0      & \cdots & m      & \cdots & 0      \\
+              \vdots &        & \vdots & \ddots & \vdots \\
+              0      & \cdots & 0      & \cdots & 0      \\
+            \end{matrix} 
+        \right]
+  \end{matrix}
 \]
-\end{verbatim}
+\end{minted}
 
 还可以用边界矩阵环境 bordermatrix。\index{边界矩阵}
 \[
@@ -89,18 +93,18 @@ j&\left[ \begin{matrix}
 	& 0      & \cdots & 0      & \cdots & 0
 }
 \]
-\begin{verbatim}
+\begin{minted}{tex}
 \[
-\bordermatrix{
-	&	     &        & i      &		&        \cr
-	& 0      & \cdots & 0      & \cdots & 0      \cr
-	& \vdots & \ddots & \vdots &		& \vdots \cr
+  \bordermatrix{
+    &        &        & i      &        &        \cr
+    & 0      & \cdots & 0      & \cdots & 0      \cr
+    & \vdots & \ddots & \vdots &        & \vdots \cr
   j & 0      & \cdots & m      & \cdots & 0      \cr
-	& \vdots &		  & \vdots & \ddots & \vdots \cr
-	& 0      & \cdots & 0      & \cdots & 0
-}
+    & \vdots &        & \vdots & \ddots & \vdots \cr
+    & 0      & \cdots & 0      & \cdots & 0
+  }
 \]
-\end{verbatim}
+\end{minted}
 
 可以参考\url{http://blog.sina.com.cn/s/blog_5e16f1770102dqp2.html}.
 
